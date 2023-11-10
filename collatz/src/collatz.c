@@ -16,9 +16,7 @@ unsigned long collatz(unsigned long n) {
 int main() {
      long start, end, num, max_length = 0, max_num = 0;
 //initialize mag_length and max_num ,variables we will need in for 
-    printf("Εισαγάγετε πρωτο ακεραιο εύρους: ");
     scanf("%ld", &start);
-    printf("Εισαγάγετε δευτερο ακεραιο εύρους: ");
     scanf("%ld",&end); 
     //scans user's type while we are asking him for two intigers
     
@@ -45,7 +43,7 @@ int main() {
     if (start>0){
         if (end>0){
     //this is in case one of the intigers are 0 or smaller so it wont print the following ,also if there isn't any mistakes it will print it correctly
-    printf("Ο αριθμός με το μέγιστο μήκος ακολουθίας Collatz στο εύρος %ld -  %ld είναι %ld με μήκος %ld.\n", start, end, max_num, max_length);
+    printf(" %ld -     %ld.\n", start, end, max_num, max_length);
 
     return 0;
 }
